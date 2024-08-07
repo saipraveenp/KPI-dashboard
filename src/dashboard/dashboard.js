@@ -49,9 +49,11 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import AssignmentTurnedInSharpIcon from "@mui/icons-material/AssignmentTurnedInSharp";
 import BarChartSharpIcon from "@mui/icons-material/BarChartSharp";
 import { CircularProgressbar } from "react-circular-progressbar";
+import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import DiningIcon from '@mui/icons-material/Dining';
 import HomeIcon from "@mui/icons-material/Home";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
+import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import MailIcon from "@mui/icons-material/Mail";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -60,6 +62,7 @@ import NavigateNextSharpIcon from "@mui/icons-material/NavigateNextSharp";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import React from "react";
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
+import RoomServiceIcon from '@mui/icons-material/RoomService';
 import SearchIcon from "@mui/icons-material/Search";
 import SettingsIcon from "@mui/icons-material/Settings";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
@@ -576,7 +579,7 @@ const Dashboard = () => {
 
             <div className="col-12 col-lg-4">
               <Item className="feature-card">
-                <IconTypography icon={StarIcon} text="Goals" />
+                <IconTypography icon={CrisisAlertIcon} text="Goals" />
                 {/* {NavigateNextSharpIcon} */}
                 {
                   <RoundIconButton
@@ -590,7 +593,7 @@ const Dashboard = () => {
               </Item>
               <Item className="feature-card">
                 <IconTypography
-                  icon={DiningIcon}
+                  icon={LunchDiningIcon}
                   text="Popular Dishes"
                 />
                 {
@@ -606,7 +609,7 @@ const Dashboard = () => {
                 {/* Add your popular dishes component here */}
               </Item>
               <Item className="feature-card">
-                <IconTypography icon={MenuBookIcon} text="Menus" />
+                <IconTypography icon={RoomServiceIcon} text="Menus" />
                 {
                   <RoundIconButton
                     edge="middle"
