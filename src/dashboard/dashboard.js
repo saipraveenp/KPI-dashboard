@@ -49,6 +49,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import AssignmentTurnedInSharpIcon from "@mui/icons-material/AssignmentTurnedInSharp";
 import BarChartSharpIcon from "@mui/icons-material/BarChartSharp";
 import { CircularProgressbar } from "react-circular-progressbar";
+import DiningIcon from '@mui/icons-material/Dining';
 import HomeIcon from "@mui/icons-material/Home";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import MailIcon from "@mui/icons-material/Mail";
@@ -63,6 +64,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import SettingsIcon from "@mui/icons-material/Settings";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import StarIcon from "@mui/icons-material/Star";
+import WidgetsIcon from '@mui/icons-material/Widgets';
 import { styled } from "@mui/system";
 import { useState } from "react";
 
@@ -295,44 +297,44 @@ const recentOrders = [
 ];
 const feedbacks = [
   {
-    name: "Jenny Wilson",
+    name: "Venu Puppala",
     comment:
-      "The food was excellent and so was the service. Highly recommended!",
+      "Both the meal and the service were outstanding. Strongly advised!",
     rating: 3,
   },
   {
-    name: "John Doe",
-    comment: "Great atmosphere and friendly staff. Highly recommend!",
+    name: "Kiran Macha",
+    comment: "Great atmosphere and polite personnel. Strongly advised!",
     rating: 4,
   },
   {
-    name: "Jane Smith",
-    comment: "Food was good, but service could be improved.",
+    name: "Srinithi Vemula",
+    comment: "Although the food was good, the service might be better.",
     rating: 5,
   },
   {
-    name: "Alice Johnson",
-    comment: "A delightful dining experience with attentive service.",
+    name: "Prasad palla",
+    comment: "A lovely meal with good service.",
     rating: 4,
   },
   {
-    name: "Bob Brown",
+    name: "Michale Jackson",
     comment:
-      "The food was average and the wait was long. Could use some improvements.",
+      "The wait was lengthy and the meal was mediocre. Could be improved upon.",
     rating: 2,
   },
   {
-    name: "Emily Davis",
-    comment: "Loved the ambiance and the food was tasty. Will visit again!",
+    name: "Harvely David",
+    comment: "The food was delicious, and I loved the atmosphere. Will return in the future!",
     rating: 4,
   },
   {
-    name: "David Martin",
+    name: "David Warner",
     comment: "The restaurant was clean, but the food lacked flavor.",
     rating: 3,
   },
   {
-    name: "Sophia Brown",
+    name: "Priyanna Reddy",
     comment:
       "Loved the atmosphere and the unique dishes. Will definitely return.",
     rating: 4,
@@ -357,7 +359,7 @@ const Dashboard = () => {
       <Sidebar>
         <Box>
           <IconButton>
-            <MenuIcon style={{ color: "#fff" }} />
+            <WidgetsIcon style={{ color: "#fff" }} />
           </IconButton>
         </Box>
         <Box
@@ -588,7 +590,7 @@ const Dashboard = () => {
               </Item>
               <Item className="feature-card">
                 <IconTypography
-                  icon={RestaurantMenuIcon}
+                  icon={DiningIcon}
                   text="Popular Dishes"
                 />
                 {
