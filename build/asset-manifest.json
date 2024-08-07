@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.df7275f5.css",
-    "main.js": "/static/js/main.fdf5585f.js",
-    "static/js/453.fbe3e621.chunk.js": "/static/js/453.fbe3e621.chunk.js",
-    "index.html": "/index.html",
-    "main.df7275f5.css.map": "/static/css/main.df7275f5.css.map",
-    "main.fdf5585f.js.map": "/static/js/main.fdf5585f.js.map",
-    "453.fbe3e621.chunk.js.map": "/static/js/453.fbe3e621.chunk.js.map"
+    "main.css": "/KPI-dashboard/static/css/main.df7275f5.css",
+    "main.js": "/KPI-dashboard/static/js/main.0a401983.js",
+    "static/js/453.fbe3e621.chunk.js": "/KPI-dashboard/static/js/453.fbe3e621.chunk.js",
+    "index.html": "/KPI-dashboard/index.html",
+    "main.df7275f5.css.map": "/KPI-dashboard/static/css/main.df7275f5.css.map",
+    "main.0a401983.js.map": "/KPI-dashboard/static/js/main.0a401983.js.map",
+    "453.fbe3e621.chunk.js.map": "/KPI-dashboard/static/js/453.fbe3e621.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df7275f5.css",
-    "static/js/main.fdf5585f.js"
+    "static/js/main.0a401983.js"
   ]
 }

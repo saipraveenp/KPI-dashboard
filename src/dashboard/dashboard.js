@@ -166,23 +166,36 @@ const RoundIconButton = styled(IconButton)(({ theme }) => ({
 }));
 const icons = {
   totalOrders: (
-    <SquareIcon color="#ff5722">
-      <LocalMallIcon />
+    <SquareIcon color="#ff5722" className="icons-div">
+
+      <div className="icons-wrapper">
+
+        <LocalMallIcon />
+      </div>
     </SquareIcon>
   ),
   totalDelivered: (
-    <SquareIcon color="#4caf50">
-      <AddShoppingCartIcon />
+    <SquareIcon color="#4caf50" className="icons-div">
+      <div className="icons-wrapper">
+
+        <AddShoppingCartIcon />
+      </div>
     </SquareIcon>
   ),
   totalCancelled: (
-    <SquareIcon color="#f44336">
-      <AttachMoney />
+    <SquareIcon color="#f44336" className="icons-div">
+      <div className="icons-wrapper">
+
+        <AttachMoney />
+      </div>
     </SquareIcon>
   ),
   totalRevenue: (
-    <SquareIcon color="#3f51b5">
-      <Done />
+    <SquareIcon color="#3f51b5" className="icons-div">
+      <div className="icons-wrapper">
+
+        <Done />
+      </div>
     </SquareIcon>
   ),
 };
@@ -412,8 +425,8 @@ const Dashboard = () => {
                       <Box>
                         {icons.totalOrders}
                         <Box ml={2}>
-                          <Typography variant="h7">Total Orders</Typography>
-                          <Typography variant="h5">75</Typography>
+                          <Typography className="Kpi-card-heading">Total Orders</Typography>
+                          <Typography className="Kpi-card-value">75</Typography>
                         </Box>
                       </Box>
                     </Item>
@@ -423,8 +436,8 @@ const Dashboard = () => {
                       <Box display="flex" alignItems="center">
                         {icons.totalDelivered}
                         <Box ml={2}>
-                          <Typography variant="h7">Total Delivered</Typography>
-                          <Typography variant="h5">70</Typography>
+                          <Typography className="Kpi-card-heading">Total Delivered</Typography>
+                          <Typography className="Kpi-card-value">70</Typography>
                         </Box>
                       </Box>
                     </Item>
@@ -434,8 +447,8 @@ const Dashboard = () => {
                       <Box display="flex" alignItems="center">
                         {icons.totalCancelled}
                         <Box ml={2}>
-                          <Typography variant="h7">Total Cancelled</Typography>
-                          <Typography variant="h5">5</Typography>
+                          <Typography className="Kpi-card-heading">Total Cancelled</Typography>
+                          <Typography className="Kpi-card-value">5</Typography>
                         </Box>
                       </Box>
                     </Item>
@@ -445,8 +458,8 @@ const Dashboard = () => {
                       <Box display="flex" alignItems="center">
                         {icons.totalRevenue}
                         <Box ml={2}>
-                          <Typography variant="h7">Total Revenue</Typography>
-                          <Typography variant="h5">$12k</Typography>
+                          <Typography className="Kpi-card-heading">Total Revenue</Typography>
+                          <Typography className="Kpi-card-value">$12k</Typography>
                         </Box>
                       </Box>
                     </Item>
@@ -505,16 +518,17 @@ const Dashboard = () => {
                     <Typography variant="h6">Activity</Typography>
                     <FormControl
                       variant="outlined"
-                      style={{ marginBottom: "20px", minWidth: 120 }}
+                      style={{ marginBottom: "20px", minWidth: 120, }}
+                      className="dropdown-formControl"
                     >
-                      <InputLabel>Filter</InputLabel>
                       <Select
                         value={filter}
                         onChange={handleFilterChange}
-                        label="Filter"
+
+                        className="dropdown-wrapper"
                       >
                         {filterOptions.map((option) => (
-                          <MenuItem key={option.value} value={option.value}>
+                          <MenuItem style={{ border: "none" }} key={option.value} value={option.value}>
                             {option.label}
                           </MenuItem>
                         ))}
@@ -537,7 +551,7 @@ const Dashboard = () => {
                     </BarChart>
 
                     <div>
-                      {/*                   
+                      {/*
                       <BarChart
         width={600}
         height={300}
@@ -548,7 +562,7 @@ const Dashboard = () => {
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
-        {/* <Legend /> 
+        {/* <Legend />
                       <Bar dataKey={filter} fill="#8884d8" />
                       {/* <Bar dataKey="uv" stackId="a" fill="#82ca9d" /> *
       </BarChart> */}
